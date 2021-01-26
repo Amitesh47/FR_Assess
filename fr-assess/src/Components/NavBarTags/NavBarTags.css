@@ -1,0 +1,52 @@
+.tagList li {
+  float: left;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.tagList li:hover {
+  background-color: lightcyan;
+  color: black;
+}
+
+.tagList li.active {
+  background-color: lightcyan;
+  color: white;
+}
+
+.tagList .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .tagList li {
+    display: none;
+  }
+  .tagList a.icon {
+    float: right;
+    display: block;
+  }
+  .navbarTags {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tagList.responsive {
+    position: relative;
+  }
+  .tagList.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .tagList.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

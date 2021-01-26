@@ -1,0 +1,10 @@
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Assets/bgImage.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 16px;
+}
